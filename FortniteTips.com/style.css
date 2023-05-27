@@ -1,0 +1,137 @@
+h1 {
+    font-family: cursive;
+    color: rgb(8, 49, 102);
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: fantasy;
+    color: rgb(8, 49, 102);
+    text-align: center;
+    font-size: 37px;
+}
+
+ol {
+   list-style-type: decimal;
+   list-style-position: inside;
+}
+
+li{
+    font-family: cursive;
+    color: rgb(8, 49, 102);
+    text-align: center;
+    font-size: 34px;
+}
+
+h3 {
+    font-family: cursive;
+    color: rgb(8, 49, 102);
+    text-align: center;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: cursive;
+    color: rgb(8, 49, 102);
+    text-align: center;
+    font-size: 48px;
+}
+
+p1 {
+    font-family: fantasy;
+    color: rgb(8, 49, 102);
+    font-size: 32px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.btn {
+    background: none;
+    border: 2px solid #000;
+    font-family: montserrate, sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.4s linear;
+    position: relative;
+}
+
+.btn:hover{
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #34c210;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn1::before{
+    transform: scaleX(0);
+}
+.btn2::before{
+    transform: scaleY(0);
+}
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+.btn2:hover::before{
+    transform: scaleY(1);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    background: #fff;
+    width: 600px;
+    height: 50px;
+    display: flex;
+}
+
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+form button{
+    background: rgb(109, 221, 109);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
